@@ -7,6 +7,7 @@ module Drogmo
             @data_raw = $gtk.parse_json_file(@path_raw)
             @tilesets = []
             @layers = {}
+            @entities = {}
             @path_relative = nil
             parse_path
             setup
@@ -19,14 +20,16 @@ module Drogmo
                     attribute[1].each do |tileset|
                         @tilesets << Tileset.new(tileset, @path_relative)
                     end
+                when "entities"
+                    attribute[1].each do |entity|
+                        @entities["#{entity["name"]}"] = ProjectEntity.new(entity)
+                    end
                 when "layers"
                     attribute[1].each do |layer|
                         @layers["#{layer["name"]}"] = ProjectLayer.new(layer)
                     end
                 end
             end
-            
-            # puts @tilesets
         end
 
         def parse_path

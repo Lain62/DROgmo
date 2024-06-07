@@ -15,7 +15,7 @@
   "compactExport": false,
   "externalScript": "",
   "playCommand": "",
-  "entityTags": [],
+  "entityTags": ["jump"],
   "layers": [
     {
       "definition": "tile",
@@ -90,6 +90,45 @@
       "nodeGhost": true,
       "tags": [],
       "values": []
+    },
+    {
+      "exportID": "78448036",
+      "name": "Entity_2",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 1, "y": 1},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#b1fcffff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": ["jump"],
+      "values": [
+        {"name": "Bool_Value", "definition": "Boolean", "display": 0, "defaults": false},
+        {"name": "String_Value", "definition": "String", "display": 0, "defaults": "Example_String", "maxLength": 0, "trimWhitespace": true}
+      ]
     }
   ],
   "tilesets": [

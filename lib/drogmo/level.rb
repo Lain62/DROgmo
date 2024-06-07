@@ -16,9 +16,11 @@ module Drogmo
                 case attribute[0]
                 when "layers"
                     attribute[1].each do |layer|
-                        case @ogmo_data.layers["#{layer["name"]}"].data_raw["definition"]
+                        case @ogmo_data.layers["#{layer["name"]}"].definition
                         when "tile"
                             @layers["#{layer["name"]}"] = LevelTileLayer.new(@ogmo_data, layer)
+                        when "entity"
+                            @layers["#{layer["name"]}"] = LevelEntityLayer.new(@ogmo_data, layer)
                         end
                     end
                 end
