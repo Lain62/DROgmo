@@ -1,0 +1,70 @@
+{
+  "ogmoVersion": "3.4.0",
+  "width": 320,
+  "height": 256,
+  "offsetX": 0,
+  "offsetY": 0,
+  "values": {"bool_value": false},
+  "layers": [
+    {
+      "name": "Entity_Layer",
+      "_eid": "74164902",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 64,
+      "gridCellHeight": 64,
+      "gridCellsX": 5,
+      "gridCellsY": 4,
+      "entities": [
+        {
+          "name": "Entity_2",
+          "id": 0,
+          "_eid": "78448036",
+          "x": 128,
+          "y": 64,
+          "originX": 1,
+          "originY": 1,
+          "values": {"Bool_Value": false, "String_Value": "Example_String"}
+        }
+      ]
+    },
+    {
+      "name": "Grid_Layer",
+      "_eid": "74165732",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 64,
+      "gridCellHeight": 64,
+      "gridCellsX": 5,
+      "gridCellsY": 4,
+      "grid": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+      "arrayMode": 0
+    },
+    {
+      "name": "Decal_Layer",
+      "_eid": "74162383",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 64,
+      "gridCellHeight": 64,
+      "gridCellsX": 5,
+      "gridCellsY": 4,
+      "decals": [],
+      "folder": ""
+    },
+    {
+      "name": "Tile_Layer",
+      "_eid": "74161276",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 64,
+      "gridCellHeight": 64,
+      "gridCellsX": 5,
+      "gridCellsY": 4,
+      "tileset": "atlas",
+      "data": [8, 8, 8, 8, 8, 8, 9, 9, 9, 8, 8, 9, 9, 9, 8, 8, 8, 8, 8, 8],
+      "exportMode": 0,
+      "arrayMode": 0
+    }
+  ]
+}

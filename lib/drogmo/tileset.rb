@@ -9,10 +9,7 @@ module Drogmo
             @tile_margin = [data_raw["tileMarginX"],data_raw["tileMarginY"]]
             @image_size = $gtk.calcspritebox @path
             @tiles = []
-            setup
-        end
-
-        def setup
+            
             offset_x = @tile_margin.x
             offset_y = @tile_margin.y
             big_square_w = @tile_size.x + @tile_separation.x
@@ -39,6 +36,5 @@ module Drogmo
                 end
             end
         end
-
     end
 end

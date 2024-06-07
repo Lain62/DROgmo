@@ -6,7 +6,7 @@ def tick args
 
 
   args.outputs.sprites << args.state.level.layers["Tile_Layer"].sprites
-  # puts args.state.level.layers["Tile_Layer"].sprites
+  puts args.state.level.layers["Entity_Layer"].entities
   # puts args.state.ogmo.data.name
 end
 
