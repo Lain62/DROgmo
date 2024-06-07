@@ -20,21 +20,16 @@ module Drogmo
             @array_mode = raw_data["arrayMode"]
 
             @tileset = project.tilesets["#{raw_data["tileset"]}"]
-
+            
             project.layers.each do |layer|
                 if layer[1].export_id == @eid
                     @project_data = layer[1]
                 end
             end
 
-            cellY = @grid_cells_y
+            cellY = @grid_cells_y - 1
             cellX = 0
             @data.each do |tile|
-                cellX += 1
-                    if cellX > @grid_cells_x
-                        cellY -= 1
-                        cellX -= @grid_cells_y
-                    end
                 if tile == -1
                 else
                     tiles = @tileset.tiles[tile]
@@ -50,6 +45,11 @@ module Drogmo
                         tile_w: tiles.tile_w,
                         tile_h: tiles.tile_h
                     }
+                end
+                cellX += 1
+                if cellX >= @grid_cells_x
+                    cellY -= 1
+                    cellX -= @grid_cells_x
                 end
             end
         end

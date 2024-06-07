@@ -30,7 +30,7 @@ module Drogmo
                     path: @path
                 }
                 cellX += 1
-                if cellX > square.x
+                if cellX >= square.x
                     cellX -= square.x
                     cellY += 1
                 end
