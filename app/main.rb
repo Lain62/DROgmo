@@ -1,4 +1,4 @@
-require "lib/Drogmo/Drogmo.rb"
+require "lib/drogmo/drogmo.rb"
 
 def tick args
   args.state.ogmo ||= Drogmo::Project.new("data/OgmoTestProject.ogmo")
