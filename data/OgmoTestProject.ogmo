@@ -1,5 +1,5 @@
 {
-  "name": "New Project",
+  "name": "DROgmo",
   "ogmoVersion": "3.4.0",
   "levelPaths": ["."],
   "backgroundColor": "#282c34ff",
@@ -33,7 +33,7 @@
       "gridSize": {"x": 64, "y": 64},
       "exportID": "74165732",
       "arrayMode": 0,
-      "legend": {"0": "#00000000", "1": "#000000ff"}
+      "legend": {"0": "#00000000", "1": "#000000ff", "2": "#f62828ff"}
     },
     {
       "definition": "decal",

@@ -5,8 +5,8 @@ def tick args
   args.state.level ||= Drogmo::Level.new(args.state.ogmo, "data/level_1.json")
 
 
-  args.outputs.sprites << args.state.level.layers["Tile_Layer"].sprites
-  # puts args.state.ogmo.data.name
+  # args.outputs.sprites << args.state.level.layers["Tile_Layer"].sprites
+  puts args.state.ogmo.layers
 end
 
 

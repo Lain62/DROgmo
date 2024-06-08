@@ -1,6 +1,6 @@
 module Drogmo
     class ProjectEntity
-        attr_reader :export_id, :name, :limit, :size, :origin, :origin_anchored, :shape, :color
+        attr_reader :export_id, :name, :limit, :size, :origin, :origin_anchored, :shape, :color, :colorRGBA
         attr_reader :tile_x, :tile_y, :tile_size, :resizeable_x, :resizeable_y, :rotatable, :rotation_degrees
         attr_reader :can_flip_x, :can_flip_y, :can_set_color, :has_nodes, :node_limit, :node_display
         attr_reader :node_ghost, :tags, :values, :texture, :texture_path
@@ -13,6 +13,8 @@ module Drogmo
             @origin_anchored = data["originAnchored"]
             @shape = data["shape"]
             @color = data["color"]
+            color_convert = @color.gsub("#", "")
+            @colorRGBA = Drogmo.color(color_convert)
             @tile_x = data["tileX"]
             @tile_y = data["tileY"]
             @tile_size = [data["tileSize"]["x"], data["tileSize"]["y"]]

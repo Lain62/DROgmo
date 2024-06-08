@@ -1,5 +1,5 @@
 module Drogmo
-    class ProjectLayer
+    class ProjectLayerTile
         attr_reader :definition, :name, :grid_size, :export_id, :export_mode, :array_mode, :default_tileset
         def initialize(data_raw)
             @definition = data_raw["definition"]

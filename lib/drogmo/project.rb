@@ -25,7 +25,16 @@ module Drogmo
             @entity_tags = data["entityTags"]
 
             data["layers"].each do |layer|
-                @layers["#{layer["name"]}"] = ProjectLayer.new(layer)
+                case layer["definition"]
+                when "tile"
+                    @layers["#{layer["name"]}"] = ProjectLayerTile.new(layer)
+                when "entity"
+                    @layers["#{layer["name"]}"] = ProjectLayerEntity.new(layer)
+                when "grid"
+                    @layers["#{layer["name"]}"] = ProjectLayerGrid.new(layer)
+                when "decal"
+                    @layers["#{layer["name"]}"] = ProjectLayerDecal.new(layer)
+                end
             end
 
             data["tilesets"].each do |tileset|
