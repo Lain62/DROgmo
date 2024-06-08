@@ -38,7 +38,7 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
     data_coords2D:      # For Coords Export mode and 2D Array mode
     tileset:            # For raw data from the main ogmo project of the specific tileset used
     tileset_name:       # For the name of the tileset itself
-    sprites:            # Filled with sprite that responds to { x, y, w, h, primitive_marker, path, tile_x, tile_y, tile_w, tile_h }
+    sprites:            # Filled with sprite that responds to { x, y, w, h, primitive_marker(sprites), path, tile_x, tile_y, tile_w, tile_h }
 
 }
 ```
