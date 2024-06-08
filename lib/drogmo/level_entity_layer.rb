@@ -34,7 +34,7 @@ module Drogmo
                     id: entity["id"],
                     eid: entity["_eid"],
                     x: entity["x"],
-                    y: entity["y"],
+                    y: entity["y"]- height * 2,  # FIXME: This is a hotfix for the y pos not being accurate
                     origin_x: entity["originX"],
                     origin_y: entity["originY"],
                     values: entity["values"],

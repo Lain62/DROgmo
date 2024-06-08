@@ -165,7 +165,7 @@ DROgmo doesnt support decal level layer currently
     data_coords:        # For Coords Export mode and 1D Array mode
     data2D:             # For ID's Export mode and 2D Array mode
     data_coords2D:      # For Coords Export mode and 2D Array mode
-    tileset:            # For raw data from the main ogmo project of the specific tileset used
+    tileset:            # Referrs to the data from project tileset of the specific tileset
     tileset_name:       # For the name of the tileset itself
     sprites:            # Filled with sprite with properties { x, y, w, h, primitive_marker(:sprites), path, tile_x, tile_y, tile_w, tile_h }
 
