@@ -34,7 +34,7 @@ module Drogmo
                     id: entity["id"],
                     eid: entity["_eid"],
                     x: entity["x"],
-                    y: entity["y"]- height * 2,  # FIXME: This is a hotfix for the y pos not being accurate
+                    y: level_data.height - entity["y"] - height,  # Weird formula to compensate for the origin point being in the top left
                     origin_x: entity["originX"],
                     origin_y: entity["originY"],
                     values: entity["values"],

@@ -1,5 +1,5 @@
 module Drogmo
-    VERSION = "0.11"
+    VERSION = "0.102"
 
     require "lib/Drogmo/color_conversion.rb"
     require "lib/Drogmo/project.rb"
