@@ -2,6 +2,8 @@
 A simple wrapper implementation of Ogmo Editor for DragonRuby.  
 Made for Ogmo Editor version 3.4.0  
 
+## TODO
+- add support for level decal layer
 
 ## Usage
 A quick way to use this wrapper
@@ -20,7 +22,7 @@ You can acess Ogmo Projects using the `Drogmo::Project.new(path)`
 ```ruby
 args.state.ogmo ||= Drogmo::Project.new("data/OgmoTestProject.ogmo")
 ```
-#### Project Methods
+### Project Properties
 ```ruby
 {
     name:
@@ -40,6 +42,48 @@ args.state.ogmo ||= Drogmo::Project.new("data/OgmoTestProject.ogmo")
 }
 ```
 
+### Project Layer
+Each layer from project has its own properties 
+DROgmo supports all project layer type 
+
+#### Project Tile Layer Properties
+```ruby
+{
+    definition:
+    name:
+    grid_size:
+    export_id:
+    export_mode:
+    array_mode:
+    default_tileset
+}
+```
+
+#### Project Entity Layer Properties
+```ruby
+{
+    definition:
+    name:
+    grid_size:
+    export_id:
+    required_tags:
+    excluded_tags
+}
+```
+
+#### Project Grid Layer Properties
+```ruby
+{
+    definition:
+    name:
+    grid_size:
+    export_id:
+    array_mode:
+    legend:
+    legendRGBA:         # Like legends but outputs an RGBA array instead
+}
+```
+
 ## Levels
 You can acess levels using the `Drogmo::Level.new(ogmo_project, Level_path)`
 ```ruby
@@ -51,8 +95,8 @@ To access a layer of a level simply do
 ```ruby
 args.state.level.layers["Tile Layer"] # Get layer by name
 ```
-DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
-#### Tile Layer Methods
+DROgmo doesnt support decal level layer currently
+#### Level Tile Layer Properties
 ```ruby
 {
     name:
@@ -74,7 +118,7 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
 }
 ```
 
-#### Entity Layer Methods
+#### Level Entity Layer Properties
 ```ruby
 {
     name:
@@ -89,7 +133,7 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
 }
 ```
 
-#### Grid Layer Methods
+#### Level Grid Layer Properties
 ```ruby
 {
     name:
@@ -104,7 +148,6 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
     grid2D:             # For 2D Array mode
     sprites:
     array_mode:
-
 }
 ```
 
