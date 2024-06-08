@@ -4,6 +4,12 @@ Made for Ogmo Editor version 3.4.0
 
 ## TODO
 - add support for level decal layer
+- put samples on main.rb
+
+## Installation
+1. Download the zip
+2. Extract the lib folder into your mygame directory
+3. add `require "lib/drogmo/drogmo.rb"` at the top of your main.rb
 
 ## Usage
 A quick way to use this wrapper
