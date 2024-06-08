@@ -17,6 +17,8 @@ module Drogmo
                     @layers["#{layer["name"]}"] = LevelTileLayer.new(project_data, layer)
                 when "entity"
                     @layers["#{layer["name"]}"] = LevelEntityLayer.new(project_data, layer)
+                when "grid"
+                    @layers["#{layer["name"]}"] = LevelGridLayer.new(project_data, layer)
                 end
             end
         end
