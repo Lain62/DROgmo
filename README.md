@@ -7,6 +7,7 @@ Made for Ogmo Editor version 3.4.0
 ## TODO
 - add support for level decal layer
 - put samples on main.rb
+- add more comments on properties
 
 ## Installation
 1. Download the zip
@@ -47,6 +48,51 @@ args.state.ogmo ||= Drogmo::Project.new("data/OgmoTestProject.ogmo")
     layers:
     tilesets:
     entities:
+}
+```
+
+### Project Entity properties
+```ruby
+{
+    export_id:
+    name:
+    limit:
+    size:
+    origin:
+    origin_anchored:
+    shape:
+    color:
+    colorRGBA:
+    tile_x:
+    tile_y:
+    tile_size:
+    resizeable_x:
+    resizeable_y:
+    rotatable:
+    rotation_degrees:
+    can_flip_x:
+    can_flip_y:
+    can_set_color:
+    node_limit:
+    node_display:
+    node_ghost:
+    tags:
+    values:
+    texture:
+    texture_path:
+}
+```
+
+### Project Tileset properties
+```ruby
+{
+    label:
+    path:
+    tile_size:
+    tile_seperation:
+    tile_margin:
+    image_size:
+    tiles:
 }
 ```
 

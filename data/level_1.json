@@ -55,7 +55,8 @@
       "gridCellsX": 4,
       "gridCellsY": 3,
       "decals": [
-        {"x": 64, "y": 64, "rotation": 0, "texture": "Cheese.png", "originX": 1, "originY": 1}
+        {"x": 64, "y": 64, "rotation": 0, "texture": "Cheese.png", "originX": 1, "originY": 1},
+        {"x": 162, "y": 97, "rotation": 0, "texture": "folder/Cheese.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": ""
     },
