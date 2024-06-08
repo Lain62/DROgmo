@@ -1,5 +1,5 @@
 # DROgmo
-`Version 0.1`  
+`Version 0.11`  
 A simple lib implementation of Ogmo Editor for DragonRuby.  
 Made for Ogmo Editor version 3.4.0  
 
