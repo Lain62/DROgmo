@@ -2,6 +2,7 @@ module Drogmo
     class LevelTileLayer
         attr_reader :sprites, :name, :eid, :offset_x, :offset_y, :grid_cell_width, :grid_cell_height
         attr_reader :grid_cells_x, :grid_cells_y, :tileset, :data, :data_coords, :data2D, :data_coords2D, :export_mode, :array_mode
+        attr_reader :tileset_name
         def initialize(project, raw_data)
             @tileset = nil
             @project_data = nil
@@ -23,6 +24,7 @@ module Drogmo
             @array_mode = raw_data["arrayMode"]
 
             @tileset = project.tilesets["#{raw_data["tileset"]}"]
+            @tileset_name = raw_data["tileset"]
             
             project.layers.each do |layer|
                 if layer[1].export_id == @eid
