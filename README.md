@@ -16,9 +16,9 @@ args.outputs.primitives << args.state.level.layers["Tile_Layer"].sprites
 > WARNING: Currently DROgmo only supports having the files be in the same directory, or sub-folders of the main Ogmo Project Directory.  
 > This includes tilesheets sprites, Entity images, and so on
 ## Layers
-To access a layer simply do 
+To access a layer of a level simply do 
 ```ruby
-args.state.level.layers["Tile Layer"] # Layer by name
+args.state.level.layers["Tile Layer"] # Get layer by name
 ```
 DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
 ### Tile Layer Methods
@@ -55,6 +55,25 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
     grid_cells_x:
     grid_cells_y:
     entities:           # Filled with entity that responds to { name, id, eid, x, y, width, height, origin_x, origin_y, flipped_x, flipped_y, rotation, data } data here reffers to the raw data from the main ogmo project of the specific entity used
+}
+```
+
+### Grid Layer Methods
+```ruby
+{
+    name:
+    eid:
+    offset_x:
+    offset_y:
+    grid_cell_width:
+    grid_cell_height:
+    grid_cells_x:
+    grid_cells_y:
+    grid:               # For 1D Array mode
+    grid2D:             # For 2D Array mode
+    sprites:
+    array_mode:
+
 }
 ```
 
