@@ -32,7 +32,7 @@
       "name": "Grid_Layer",
       "gridSize": {"x": 64, "y": 64},
       "exportID": "74165732",
-      "arrayMode": 0,
+      "arrayMode": 1,
       "legend": {"0": "#00000000", "1": "#000000ff", "2": "#f62828ff"}
     },
     {
@@ -43,7 +43,7 @@
       "folder": "",
       "includeImageSequence": true,
       "scaleable": false,
-      "rotatable": false,
+      "rotatable": true,
       "values": []
     },
     {

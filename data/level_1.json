@@ -37,8 +37,12 @@
       "gridCellHeight": 64,
       "gridCellsX": 4,
       "gridCellsY": 3,
-      "grid": ["2", "0", "2", "0", "0", "1", "0", "1", "2", "0", "1", "0"],
-      "arrayMode": 0
+      "grid2D": [
+        ["2", "0", "2", "0"],
+        ["0", "1", "0", "1"],
+        ["2", "0", "1", "0"]
+      ],
+      "arrayMode": 1
     },
     {
       "name": "Decal_Layer",
@@ -49,7 +53,9 @@
       "gridCellHeight": 64,
       "gridCellsX": 4,
       "gridCellsY": 3,
-      "decals": [],
+      "decals": [
+        {"x": 64, "y": 64, "rotation": 0, "texture": "Cheese.png", "originX": 1, "originY": 1}
+      ],
       "folder": ""
     },
     {
