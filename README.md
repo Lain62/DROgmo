@@ -1,6 +1,8 @@
 # DROgmo
+`Version 0.1`  
 A simple wrapper implementation of Ogmo Editor for DragonRuby.  
 Made for Ogmo Editor version 3.4.0  
+
 
 ## TODO
 - add support for level decal layer
