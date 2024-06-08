@@ -183,7 +183,7 @@ DROgmo doesnt support decal level layer currently
     grid_cell_height:
     grid_cells_x:
     grid_cells_y:
-    entities:           # Filled with entity with properties { name, id, eid, x, y, width, height, origin_x, origin_y, flipped_x, flipped_y, rotation, data } data here reffers to the raw data from the main ogmo project of the specific entity used
+    entities:           # Filled with entity with properties { name, id, eid, x, y, width, height, origin_x, origin_y, flipped_x, flipped_y, rotation, data } data here reffers to project entity properties of the specific entity
 }
 ```
 
