@@ -1,5 +1,5 @@
 module Drogmo
-    class Tileset
+    class ProjectTileset
         attr_reader :label, :tiles, :tile_separation, :tile_margin, :tile_size, :path, :image_size
         def initialize(data_raw, path_relative)
             @label = data_raw["label"]

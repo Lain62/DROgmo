@@ -38,7 +38,7 @@ module Drogmo
             end
 
             data["tilesets"].each do |tileset|
-                @tilesets["#{tileset["label"]}"] = Tileset.new(tileset, path_relative)
+                @tilesets["#{tileset["label"]}"] = ProjectTileset.new(tileset, path_relative)
             end
 
             data["entities"].each do |entity|
