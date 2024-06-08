@@ -121,7 +121,7 @@ DROgmo doesnt support decal level layer currently
     data_coords2D:      # For Coords Export mode and 2D Array mode
     tileset:            # For raw data from the main ogmo project of the specific tileset used
     tileset_name:       # For the name of the tileset itself
-    sprites:            # Filled with sprite that responds to { x, y, w, h, primitive_marker(sprites), path, tile_x, tile_y, tile_w, tile_h }
+    sprites:            # Filled with sprite with properties { x, y, w, h, primitive_marker(:sprites), path, tile_x, tile_y, tile_w, tile_h }
 
 }
 ```
@@ -137,7 +137,7 @@ DROgmo doesnt support decal level layer currently
     grid_cell_height:
     grid_cells_x:
     grid_cells_y:
-    entities:           # Filled with entity that responds to { name, id, eid, x, y, width, height, origin_x, origin_y, flipped_x, flipped_y, rotation, data } data here reffers to the raw data from the main ogmo project of the specific entity used
+    entities:           # Filled with entity with properties { name, id, eid, x, y, width, height, origin_x, origin_y, flipped_x, flipped_y, rotation, data } data here reffers to the raw data from the main ogmo project of the specific entity used
 }
 ```
 
@@ -152,9 +152,9 @@ DROgmo doesnt support decal level layer currently
     grid_cell_height:
     grid_cells_x:
     grid_cells_y:
-    grid:               # For 1D Array mode
-    grid2D:             # For 2D Array mode
-    sprites:
+    grid:               # For 2D Array mode Filled with object with the properties { x, y, w, h, data, color, colorRGBA} data here referrs to the object id
+    grid2D:             # For 2D Array mode Filled with object with the properties { x, y, w, h, data, color, colorRGBA} data here referrs to the object id
+    sprites:            # Filled with object with the properties { x, y, w, h, primitive_marker(:solid), data, r, g, b, a }
     array_mode:
 }
 ```
