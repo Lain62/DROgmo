@@ -1,6 +1,6 @@
 # DROgmo
 `Version 0.1`  
-A simple wrapper implementation of Ogmo Editor for DragonRuby.  
+A simple lib implementation of Ogmo Editor for DragonRuby.  
 Made for Ogmo Editor version 3.4.0  
 
 
@@ -14,7 +14,7 @@ Made for Ogmo Editor version 3.4.0
 3. add `require "lib/drogmo/drogmo.rb"` at the top of your main.rb
 
 ## Usage
-A quick way to use this wrapper
+A quick way to use this lib
 ```ruby
 require "lib/drogmo/drogmo.rb" # loads the DROgmo library, put this on top of your main.rb file
 
