@@ -15,13 +15,44 @@ args.outputs.primitives << args.state.level.layers["Tile_Layer"].sprites
 ```
 > WARNING: Currently DROgmo only supports having the files be in the same directory, or sub-folders of the main Ogmo Project Directory.  
 > This includes tilesheets sprites, Entity images, and so on
-## Layers
+## Project
+You can acess Ogmo Projects using the `Drogmo::Project.new(path)`
+```ruby
+args.state.ogmo ||= Drogmo::Project.new("data/OgmoTestProject.ogmo")
+```
+#### Project Methods
+```ruby
+{
+    name:
+    ogmo_version:
+    background_color:
+    grid_color:
+    angles_radians:
+    layer_grid_default_size:
+    level_default_size:
+    level_min_size:
+    level_max_size:
+    level_values:
+    entity_tags:
+    layers:
+    tilesets:
+    entities:
+}
+```
+
+## Levels
+You can acess levels using the `Drogmo::Level.new(ogmo_project, Level_path)`
+```ruby
+args.state.level ||= Drogmo::Level.new(args.state.ogmo, "data/level_1.json")
+```
+
+### Level Layers
 To access a layer of a level simply do 
 ```ruby
 args.state.level.layers["Tile Layer"] # Get layer by name
 ```
 DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
-### Tile Layer Methods
+#### Tile Layer Methods
 ```ruby
 {
     name:
@@ -43,7 +74,7 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
 }
 ```
 
-### Entity Layer Methods
+#### Entity Layer Methods
 ```ruby
 {
     name:
@@ -58,7 +89,7 @@ DROgmo supports `Tile Layer`, `Entity Layer`, and `Grid Layer`
 }
 ```
 
-### Grid Layer Methods
+#### Grid Layer Methods
 ```ruby
 {
     name:
