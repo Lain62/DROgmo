@@ -14,6 +14,20 @@ module Drogmo
             @entities = []
 
             data["entities"].each do |entity|
+                width = @grid_cell_width
+                height = @grid_cell_height
+                flipped_x = nil
+                flipped_y = nil
+                rotation = 0
+
+                rotation = entity["rotation"] if entity["rotation"] != nil
+
+                width = entity["width"] if entity["width"] != nil
+                height = entity["height"] if entity["height"] != nil
+
+                flipped_x = entity["flippedX"] if entity["flippedX"] != nil
+                flipped_y = entity["flippedY"] if entity["flippedY"] != nil
+
                 import_data = project.entities[entity["name"]]
                 @entities << {
                     name: entity["name"],
@@ -24,6 +38,11 @@ module Drogmo
                     origin_x: entity["originX"],
                     origin_y: entity["originY"],
                     values: entity["values"],
+                    width: width,
+                    height: height,
+                    flipped_x: flipped_x,
+                    flipped_y: flipped_y,
+                    rotation: rotation,
                     data: import_data
                 }
             end
