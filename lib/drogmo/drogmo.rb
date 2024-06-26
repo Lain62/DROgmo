@@ -1,18 +1,18 @@
 module Drogmo
-    VERSION = "0.103"
+    VERSION = "0.105"
 
-    require "lib/drogmo/color_conversion.rb"
-    require "lib/drogmo/project.rb"
-    require "lib/drogmo/project_layer_tile.rb"
-    require "lib/drogmo/project_layer_entity.rb"
-    require "lib/drogmo/project_layer_grid.rb"
-    require "lib/drogmo/project_layer_decal.rb"
-    require "lib/drogmo/project_entity.rb"
-    require "lib/drogmo/project_tileset.rb"
-    require "lib/drogmo/level.rb"
-    require "lib/drogmo/level_tile_layer.rb"
-    require "lib/drogmo/level_entity_layer.rb"
-    require "lib/drogmo/level_grid_layer.rb"
+    require_relative "color_conversion.rb"
+    require_relative "project.rb"
+    require_relative "project_layer_tile.rb"
+    require_relative "project_layer_entity.rb"
+    require_relative "project_layer_grid.rb"
+    require_relative "project_layer_decal.rb"
+    require_relative "project_entity.rb"
+    require_relative "project_tileset.rb"
+    require_relative "level.rb"
+    require_relative "level_tile_layer.rb"
+    require_relative "level_entity_layer.rb"
+    require_relative "level_grid_layer.rb"
 end
 
 
