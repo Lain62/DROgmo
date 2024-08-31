@@ -1,8 +1,7 @@
 # DROgmo
-`Version 0.105`  
+`Version 0.2`  
 A simple lib implementation of Ogmo Editor for DragonRuby.  
 Made for Ogmo Editor version 3.4.0  
-
 
 ## TODO
 - add support for level decal layer
@@ -14,10 +13,21 @@ Made for Ogmo Editor version 3.4.0
 2. Extract the lib folder into your mygame directory
 3. add `require "lib/drogmo/drogmo.rb"` at the top of your main.rb
 
+## Using download_stb_rb()
+```ruby
+# put this outside of the tick function
+$gtk.download_stb_rb "https://github.com/Lain62/DROgmo/blob/main/lib/drogmo/drogmo.rb"
+
+# then run dragonruby once and delete the line after
+# and then change the require to be like this
+require 'Lain62/DROgmo/drogmo.rb'
+```
+
 ## Usage
 A quick way to use this lib
 ```ruby
 require "lib/drogmo/drogmo.rb" # loads the DROgmo library, put this on top of your main.rb file
+# unless youre using download stb 
 
 args.state.ogmo ||= Drogmo::Project.new("data/OgmoTestProject.ogmo") # loads the main ogmo project
 args.state.level ||= Drogmo::Level.new(args.state.ogmo, "data/level_1.json") # loads the individual level from ogmo
@@ -26,6 +36,7 @@ args.outputs.primitives << args.state.level.layers["Tile_Layer"].sprites
 ```
 > WARNING: Currently DROgmo only supports having the files be in the same directory, or sub-folders of the main Ogmo Project Directory.  
 > This includes tilesheets sprites, Entity images, and so on
+> Make sure to put the main Ogmo Project file on the very top of the folder directory
 ## Project
 You can acess Ogmo Projects using the `Drogmo::Project.new(path)`
 ```ruby
